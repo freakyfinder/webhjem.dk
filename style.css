@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Outfit:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    font-family: "Gabarito", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    background-color: #F1F1ED;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Wrapper for video */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width * 100) */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  /* Video inside the wrapper */
+  .video-container iframe, .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+.scrolling-text-container {
+    width: 100%; 
+    overflow: hidden; 
+}
+
+.scrolling-text {
+    display: flex; 
+    animation: scrollText 10s linear infinite; 
+}
+
+.scrolling-text-inner {
+    white-space: nowrap; 
+    font-size: 60px;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(-100%); 
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+  
+
+
+
+  .scrolling-text-container2 {
+    width: 100%; 
+    overflow: hidden;
+}
+
+.scrolling-text2 {
+    display: flex; 
+    animation: scrollText 10s linear infinite; 
+}
+
+.scrolling-text-inner2 {
+    white-space: nowrap; 
+    font-size: 60px;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%); 
+    }
+}
+
+
+
+
+
+.navbar {
+    background-color: #F1F1ED;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #161C25;
+    font-size: 17px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff2d2d;
+}
+
+.logo-container {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-logo {
+    width: 80px;
+    height: auto;
+}
+
+.projects-container {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.project-icon {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.project-text {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+    .project-text {
+        display: none;
+    }
+    .project-icon {
+        margin: 5px;
+    }
+}
+
+
+footer {
+    background-color: #3B3B3B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+.box1, .box2 {
+    width: 90%; /* Adjust to fill most of the available space */
+    max-width: 450px; /* Keep the maximum width to maintain the original look */
+    height: 140px;
+    background-color: #ff2d2d; /* Specific to .box1 */
+    text-align: center;
+    color: #fff; /* Specific to .box1 */
+    border-radius: 35px;
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 5px 0, rgba(60, 64, 67, .15) 0 8px 16px 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.box2 {
+    background-color: #F1F1ED;
+    color: #161C25;
+}
+
+
+
+.box3, .box4 {
+    max-width: 665px;
+    width: 90%; /* Flexible width to adapt to smaller screens */
+    margin: 0 auto; /* Center the boxes */
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 2px 5px 0, rgba(60, 64, 67, 0.15) 0 8px 16px 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.box3 {
+    background-color: #F1F1ED;
+    color: #161C25;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.box4 {
+    background-color: #161C25;
+    color: #ebebeb;
+    padding: 20px;
+    border: 6px solid #161C25;
+}
+
+/* Add this to style.css */
+
+/* Add this to style.css */
+
+
+
+
+
+@media (max-width: 768px) {
+    .box3, .box4 {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .box3 b, .box4 b {
+        font-size: 24px;
+    }
+
+    .box3 p, .box4 p {
+        font-size: 18px;
+    }
+
+    .box3 img, .box4 img {
+        width: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box3, .box4 {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .box3 b, .box4 b {
+        font-size: 20px;
+    }
+
+    .box3 img, .box4 img {
+        width: 12px;
+    }
+}
+
+
+.box5 {
+    width: 90%; /* Adjusts to fill most of the available space */
+    max-width: 300px; /* Keeps the original max width */
+    height: 525px;
+    background-color: #F1F1ED;
+    text-align: center;
+    color: #161C25;
+    border-radius: 35px;
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 5px 0, rgba(60, 64, 67, .15) 0 8px 16px 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.box6 {
+    width: 90%; /* Adjusts to fill most of the available space */
+    max-width: 575px; /* Keeps the original max width */
+    height: 135px;
+    background-color: #F1F1ED;
+    text-align: center;
+    color: #161C25;
+    border-radius: 35px;
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 5px 0, rgba(60, 64, 67, .15) 0 8px 16px 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transform: rotate(-4deg);
+}
+
+.box7 {
+    width: 90%; /* Adjusts to fill most of the available space */
+    max-width: 500px; /* Keeps the original max width */
+    height: 130px;
+    background-color: #F1F1ED;
+    text-align: center;
+    color: #161C25;
+    border-radius: 35px;
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 5px 0, rgba(60, 64, 67, .15) 0 8px 16px 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transform: rotate(3deg);
+}
+
+.box8 {
+    width: 90%; /* Adjusts to fill most of the available space */
+    max-width: 1000px; /* Keeps the width reasonable on large screens */
+    height: 230px;
+    background-color: #161C25;
+    text-align: center;
+    color: #F1F1ED;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transform: rotate(0deg);
+}
+
+
+.vertical-line {
+    width: 2.7px;
+    height: 50px;
+    background-color: #161C25;
+}
+
+.button-28 {
+    appearance: none;
+    background-color: #ff2d2d;
+    border: 2px solid #ff2d2d;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.button-28:disabled {
+    pointer-events: none;
+}
+
+.button-28:hover {
+    color: #fff;
+    background-color: #ff2d2d;
+    border-color: #ff2d2d;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
